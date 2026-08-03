@@ -24,9 +24,9 @@ def opsim_time_series_images_data(
         use).
 
     :param ra_list: a list of ra points (in degrees) from objects 
-        we want to collect observations for 
+     we want to collect observations for 
     :param dec_list: a list of dec points (in degrees) from objects we want 
-        to collect observations for 
+     to collect observations for 
     :param opsim_path: string, path to the opsim database. The opsim
         database can be downloaded from
         https://s3df.slac.stanford.edu/data/rubin/sim-data/ under the
