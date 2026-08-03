@@ -17,6 +17,11 @@ def opsim_time_series_images_data(
     print_warning=True,
 ):
     """Creates time series data from opsim database.
+    The survey cadence files for Opsim can be found at
+    https://s3df.slac.stanford.edu/data/rubin/sim-
+        data/sims_featureScheduler_runsX.X/baseline/
+    folder. (replace X.X with the version of the opsim database you want to
+        use).
 
     :param ra_list: a list of ra points (in degrees) from objects 
         we want to collect observations for 
@@ -34,7 +39,7 @@ def opsim_time_series_images_data(
     :param readout_noise: noise added per readout
     :param delta_pix: size of pixel in units arcseonds
     :param print_warning: if True, prints a warning of coordinates
-        outside of the LSST footprint
+        outside the LSST footprint
     :return: a list of astropy tables containing observation information
         for each coordinate
     """
